@@ -4,9 +4,11 @@ spring:
     
 server:
   port: 8761
-  
+ 
 #no es un microservicio es un servidor eureka
 eureka:
   client:
     fetch-registry: false
     register-with-eureka: false  
+    serviceUrl:
+      defaultZone: https://servidor-eureka-production.up.railway.app/
